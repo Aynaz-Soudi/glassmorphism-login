@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form</title>
+    <title>Glassmorphism Login Form</title>
     <link rel="stylesheet" href="app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,39 +13,39 @@
     />
   </head>
   <body>
-    <div class="container">
-
-        <div class="container-items">
-        <!--! CIRCLES DIV -->
-        <div class="circles">
-            <div class="circle" id="blue"></div>
-            <div class="circle" id="orange"></div>
+    <div class="wrapper">
+      <!--! CIRCLES DIV -->
+      <div class="circles">
+        <div class="circle" id="blue"></div>
+        <div class="circle" id="orange"></div>
+      </div>
+      <!--! FORM -->
+      <form action="">
+        <h2>Log in Here</h2>
+        <div class="form_input-wrapper">
+          <label for="username">Username</label><br />
+          <input
+            type="text"
+            class="form-input"
+            id="username"
+            name="username"
+            placeholder="Email or Phone"
+            value=""
+          />
         </div>
-  
-          <!--! FORM -->
-          <form action="">
-            <h2>Log in Here</h2>
-            <label for="username">Username</label><br />
-            <input
-              type="text"
-              class="text-input"
-              id="username"
-              name="username"
-              placeholder="Email or Phone"
-              value=""
-            /><br />
-            <label for="password">Password</label><br />
-            <input
-              type="text"
-              class="text-input"
-              id="password"
-              name="password"
-              placeholder="Password"
-              value=""
-            /><br />
-            <input type="button" class="button" value="Login" />
-          </form>
+        <div class="form_input-wrapper">
+          <label for="password">Password</label><br />
+          <input
+            type="text"
+            class="form-input"
+            id="password"
+            name="password"
+            placeholder="Password"
+            value=""
+          />
         </div>
-      </div
+        <button type="submit" class="btn">Log In</button>
+      </form>
+    </div>
   </body>
 </html>
